@@ -31,7 +31,11 @@ public class UserController {
 
     @RequestMapping("/")
     public String hexo() {
-        return configBean.getMe() + " " + configBean.getSay() + "\n" +
-                configTestBean.getFirst() + "，" + configTestBean.getSecond() + "，" + configTestBean.getThird();
+        return "secret:" + configBean.getSecret() +
+                "  number:" + configBean.getNumber() +
+                "  longNumber:" + configBean.getLongNumber() +
+                "  uuid:" + configBean.getUuid() +
+                "  lessThanTen:" + configBean.getLessThanTen() +
+                "  range:" + configBean.getRange();
     }
 }
