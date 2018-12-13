@@ -3,4 +3,4 @@ Building Java projects with maven
 
 https://github.com/spring-guides/gs-maven
 
-https://spring.io/guides/gs/maven/#initial
+https://spring.io/guides/gs/maven/
